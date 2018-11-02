@@ -1,0 +1,38 @@
+div.scrollmenu {
+    background-color: #f8f9fa;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 4px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+div.scrollmenu a:hover {
+    color: black;
+}
+
+.image {
+    max-width: 850px!important;
+}
+.jumbotron {
+    background-color: #3d7aaf; /* Orange */
+    color: #ffffff;
+    height: 200px;
+}
+.navbar {
+    color: #3d7aaf;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.location-heading {
+    color: #3d7aaf;
+}
