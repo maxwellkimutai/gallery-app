@@ -62,7 +62,13 @@
 
                   </div>
                 </div>
-                
+                <script type="text/javascript">
+                function copyToClipboard(element) {
+                    var myVar = document.getElementById(element);
+                    myVar.select();
+                    document.execCommand("copy");
+                }
+                </script>
                 {% endfor %}
             </div>
         </div>
