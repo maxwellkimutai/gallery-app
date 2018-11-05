@@ -1,5 +1,5 @@
-# Blog
-#### This is an application that allows a writer to publish blog posts, October 14, 2018
+# Gallery App
+#### This is an application that allows the administrator to publish images, November 5, 2018
 #### By **Maxwell Kimutai**
 ## Description
 This is an application that allows the admin to upload photo to a database. The photos are then displayed to users on the website based on category and location.
