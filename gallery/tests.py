@@ -13,6 +13,6 @@ class LocationTestClass(TestCase):
 
     #Testing Save method
     def test_save_method(self):
-        self.james.save_location()
+        self.nairobi.save_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations) > 0)
