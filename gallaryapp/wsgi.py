@@ -1,5 +1,5 @@
 """
-WSGI config for gallaryapp project.
+WSGI config for gallaryapp projecT.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
