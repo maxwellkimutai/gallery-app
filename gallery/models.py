@@ -7,6 +7,9 @@ class categories(models.Model):
     def save_category(self):
         self.save()
 
+    def delete_category(self):
+        self.delete()
+
     def __str__(self):
         return self.name
 
@@ -15,6 +18,9 @@ class Location(models.Model):
 
     def save_location(self):
         self.save()
+
+    def delete_location(self):
+        self.delete()
 
     def __str__(self):
         return self.name
@@ -32,6 +38,9 @@ class Image(models.Model):
     def save_image(self):
         self.save()
 
+    def delete_image(self):
+        self.delete()
+
     @classmethod
     def all_images(cls):
         images = cls.objects.all()
@@ -45,3 +54,13 @@ class Image(models.Model):
             return case_images
         else:
             return images
+    @classmethod
+    def get_image_by_id(cls,id):
+        image = cls.objects.get(id = id)
+        return image
+
+    @classmethod
+    def filter_by_location(cls,search_term):
+        location = Location.objects.get(name = search_term)
+        images = cls.objects.filter(location = location)
+        return images
